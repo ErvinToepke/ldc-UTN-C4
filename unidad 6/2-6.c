@@ -1,0 +1,41 @@
+/*2. Crear una función llamada “signo”,
+ que reciba un número real,
+  y devuelva un número
+entero con el valor: -1 si el número 
+es negativo, 1 si es positivo o 
+0 si es cero.*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int signo(int rta);
+int main()
+{
+    int num1, resultado;
+    printf("Ingrese un numero:\n");
+    scanf("%i", &num1);
+    resultado = signo(num1);
+    printf("El signo de su numero es: %i\n", resultado);
+    system("pause");
+    return 0;
+}
+int signo(int rta)
+{
+    int final;
+     if( rta > 0 ) {
+         final = 1;
+      printf("1\n");
+  } 
+    else {
+      if( rta < 0 ) {
+          final = -1;
+          printf("-1\n " );
+      } 
+        else {
+          if( rta == 0 ) {
+              final = 0;
+              printf("0\n");            
+          }
+      }
+  }
+    return final;
+ }
